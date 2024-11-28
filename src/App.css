@@ -3,8 +3,6 @@ Peach #fbc490
 Coral #f67b50
 Scarlet #a82810 */
 
-
-
 .container{
   display: grid;
   place-items: center;  
@@ -15,19 +13,18 @@ Scarlet #a82810 */
   display:flex;
   flex-direction:column;
   background-color:#fbc490;
-  /* text-align: center; */
   width: 600px;
   align-items: center;
   border-radius: 40px;
   height: fit-content;
-  box-shadow: 0px 0px 20px 
+  box-shadow: 0px 0px 20px;
 }
 
 .heading{
   text-align: center;
   font-size:xxx-large;
   color: orangered;
-
+  /* flex-grow:1; */
 }
 
 .link-box{
@@ -58,15 +55,25 @@ Scarlet #a82810 */
 }
 
 .qr{
-  width: 500px;
-  height: 400px;
   margin-top: 10px;
   margin-bottom: 10px;
-  /* opacity: 0.2; */
+  flex-shrink:1;
 }
 
 .download{
   display:flex;
   flex-direction:row;
 }
+
+
+
+
+@media (max-width: 480px) {
+  .contents{
+    margin-top: 20vh;
+  }
+  
+} 
+
+
 
